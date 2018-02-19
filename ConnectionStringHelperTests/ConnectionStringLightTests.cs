@@ -1,11 +1,11 @@
 ﻿using System;
-using ConnectionStringLightHelper;
+using ConnectionStringLightPT;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ConnectionStringLightHelperTests
+namespace ConnectionStringLightPTTests
 {
     [TestClass]
-    public class ConnectionStringTests
+    public class ConnectionStringLightTests
     {
         [TestMethod]
         public void SQLDataSourceConnectionString()

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
-namespace ConnectionStringLightHelper
+namespace ConnectionStringLightPT
 {
     public static class ConnectionStringLight
     {

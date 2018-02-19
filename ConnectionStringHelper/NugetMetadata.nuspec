@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0"?>
 <package >
   <metadata>
-    <id>ConnectionStringLightHelperPT</id>
-    <version>0.0.1</version>
-    <title>ConnectionStringLightHelperPT</title>
+    <id>ConnectionStringLightPT</id>
+    <version>0.0.2</version>
+    <title>ConnectionStringLightPT</title>
     <authors>Pawel Wujczyk</authors>
     <owners>Pawel Wujczyk</owners>
-    <projectUrl>http://www.productivitytools.tech/connectionstringlighthelperpt/</projectUrl>
-    <description>Couple methods which allows to generate connection string in Code. It genreates connection string without database name (for database creation) with database, for CRUD operations</description>
-    <tags>Connection String EntityFramework</tags>
+    <projectUrl>http://www.productivitytools.tech/ConnectionStringLightPT/</projectUrl>
+    <description>Couple methods which allows to generate connection string in Code. It genreates connection string without database name (for database creation) and with database, for CRUD operations. Example: Data Source=.\sqlServerInstance;Integrated Security=True. Example: Data Source=.\sqlServerInstance;Initial Catalog=DatabaseName;Integrated Security=True</description>
+    <tags>Connectionstring</tags>
     <dependencies>
     </dependencies>
   </metadata>
