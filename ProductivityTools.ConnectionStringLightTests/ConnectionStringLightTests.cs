@@ -1,5 +1,5 @@
 ﻿using System;
-using ConnectionStringLightPT;
+using ProductivityTools;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace ConnectionStringLightPTTests

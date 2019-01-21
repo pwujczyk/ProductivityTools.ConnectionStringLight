@@ -55,9 +55,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConnectionStringHelper\ConnectionStringLightPT.csproj">
+    <ProjectReference Include="..\ProductivityTools.ConnectionStringLight\ProductivityTools.ConnectionStringLight.csproj">
       <Project>{c8fbd1ac-9605-4be3-9429-9fe18f383a6e}</Project>
-      <Name>ConnectionStringLightPT</Name>
+      <Name>ProductivityTools.ConnectionStringLight</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
