@@ -30,3 +30,6 @@ Assert.AreEqual(x, "Data Source=.;Integrated Security=True");
 var y = ConnectionStringLight.GetSqlServerConnectionString(".", "dbName");
 Assert.AreEqual(y, "Data Source=.;Initial Catalog=dbName;Integrated Security=True");
 ```
+
+
+![Img](Images/Image.png)
