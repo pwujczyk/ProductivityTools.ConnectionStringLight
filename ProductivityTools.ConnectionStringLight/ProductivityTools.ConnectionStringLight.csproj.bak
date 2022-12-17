@@ -6,10 +6,9 @@
     <Product>ProductivityTools.ConnectionStringLight</Product>
     <Description>Library generates connection string.</Description>
     <Copyright>MIT</Copyright>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>http://productivitytools.tech/connection-string-light/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/pwujczyk/ProductivityTools.ConnectionStringLight</RepositoryUrl>
-    <Version>0.0.8</Version>
+    <Version>0.0.7</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
