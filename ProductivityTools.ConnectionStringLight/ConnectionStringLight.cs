@@ -1,9 +1,9 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
 
 
 namespace ProductivityTools
@@ -28,9 +28,14 @@ namespace ProductivityTools
         /// <param name="datasource"></param>
         /// <param name="databaseName"></param>
         /// <returns></returns>
-        public static string GetSqlServerConnectionString(string datasource, string databaseName)
+        public static string GetSqlServerConnectionString(string datasource, string databaseName, bool? trustServerCertificate = null)
         {
             var connection = GetDataSource(datasource).AddIntegratedSecurity().AddInitialCatalog(databaseName);
+                if (trustServerCertificate.HasValue)
+            {
+                connection.AddTrustServerCertificate(trustServerCertificate.Value);
+            }
+
             return connection.ToString();
         }
 
@@ -56,6 +61,12 @@ namespace ProductivityTools
         private static SqlConnectionStringBuilder AddInitialCatalog(this SqlConnectionStringBuilder connectionStringBuilder, string initialCatalog)
         {
             connectionStringBuilder.InitialCatalog = initialCatalog;
+            return connectionStringBuilder;
+        }
+
+        private static SqlConnectionStringBuilder AddTrustServerCertificate(this SqlConnectionStringBuilder connectionStringBuilder, bool trustServerCertificate)
+        {
+            connectionStringBuilder.TrustServerCertificate = trustServerCertificate;
             return connectionStringBuilder;
         }
     }

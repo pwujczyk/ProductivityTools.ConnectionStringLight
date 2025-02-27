@@ -10,11 +10,15 @@ namespace ConnectionStringLightPTTests
         [TestMethod]
         public void SQLDataSourceConnectionString()
         {
-            var x=ConnectionStringLight.GetSqlDataSourceConnectionString(".");
+            var x = ConnectionStringLight.GetSqlDataSourceConnectionString(".");
             Assert.AreEqual(x, "Data Source=.;Integrated Security=True");
 
             var y = ConnectionStringLight.GetSqlServerConnectionString(".", "dbName");
             Assert.AreEqual(y, "Data Source=.;Initial Catalog=dbName;Integrated Security=True");
+
+
+            var z = ConnectionStringLight.GetSqlServerConnectionString(".", "dbName", true);
+            Assert.AreEqual(z, "Data Source=.;Initial Catalog=dbName;Integrated Security=True;Trust Server Certificate=True");
         }
     }
 }
