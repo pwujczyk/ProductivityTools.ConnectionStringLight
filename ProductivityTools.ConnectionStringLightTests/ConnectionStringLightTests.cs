@@ -1,6 +1,7 @@
 ﻿using System;
 using ProductivityTools;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestPlatform.ObjectModel;
 
 namespace ConnectionStringLightPTTests
 {
@@ -12,6 +13,9 @@ namespace ConnectionStringLightPTTests
         {
             var x = ConnectionStringLight.GetSqlDataSourceConnectionString(".");
             Assert.AreEqual(x, "Data Source=.;Integrated Security=True");
+
+            var a = ConnectionStringLight.GetSqlDataSourceConnectionString(".", true);
+            Assert.AreEqual(a, "Data Source=.;Integrated Security=True;Trust Server Certificate=True");
 
             var y = ConnectionStringLight.GetSqlServerConnectionString(".", "dbName");
             Assert.AreEqual(y, "Data Source=.;Initial Catalog=dbName;Integrated Security=True");

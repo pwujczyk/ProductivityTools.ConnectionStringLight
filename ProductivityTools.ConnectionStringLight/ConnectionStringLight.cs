@@ -16,9 +16,14 @@ namespace ProductivityTools
         /// </summary>
         /// <param name="dataSource"></param>
         /// <returns></returns>
-        public static string GetSqlDataSourceConnectionString(string dataSource)
+        public static string GetSqlDataSourceConnectionString(string dataSource, bool? trustServerCertificate = null)
         {
-            return GetSQLDataSource(dataSource).ToString();
+            var connection = GetSQLDataSource(dataSource);
+            if (trustServerCertificate.HasValue)
+            {
+                connection.AddTrustServerCertificate(trustServerCertificate.Value);
+            }
+            return connection.ToString();
         }
 
         /// <summary>
