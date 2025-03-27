@@ -9,9 +9,23 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>http://productivitytools.tech/connection-string-light/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/pwujczyk/ProductivityTools.ConnectionStringLight</RepositoryUrl>
-    <Version>0.0.10</Version>
+    <Version>0.0.12</Version>
+    <PackageIcon>ProductivityTools_blue_85px_1.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="ProductivityTools_blue_85px_1.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 </Project>
