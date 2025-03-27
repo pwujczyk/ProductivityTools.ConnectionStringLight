@@ -9,7 +9,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>http://productivitytools.tech/connection-string-light/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/pwujczyk/ProductivityTools.ConnectionStringLight</RepositoryUrl>
-    <Version>0.0.9</Version>
+    <Version>0.0.10</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
